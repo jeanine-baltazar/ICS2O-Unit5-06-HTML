@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html lang="en-ca">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description"content="Guess My Age">
+      <meta name="keywords"content= "Age, Guess, Answer">
+      <meta name="author"content= "Jeanine Baltazar">
+      <meta name="viewport"content="width=device-width, initial-scale=1.0">
+      <title>Guess My Age</title>
+      <link rel="stylesheet" href="mystyle.css">
+      <script>
+        let myAge;
+        let yourGuess;
+        function guess() {
+          yourGuess=document.guessing.yourguess.value;
+          myAge=16;
+          if (yourGuess==myAge) {
+            alert ("Correct! I am 16!");
+          } else if (yourGuess<myAge && yourGuess>0) {
+            alert ("You guessed too small. Please try again!");
+          } else if (yourGuess>myAge) {
+            alert ("You guessed too big. Please try again!");
+          } else {
+            alert ("Invalid answer. Please try again!");
+          }
+        }
+      </script>
+    </head>
+    <body>
+      <form name="guessing">
+        <h1>Guess My Age</h1>
+        <br>
+        <p id="information">
+          Hello, world! Welcome to the Guess My Age game! Try to guess how old I am by typing your
+          guess in the input box. To submit your guess, click the guess button. To guess again,
+          just type in a new guess. Good luck!
+        </p>
+        <br>
+        <table>
+          <tr>
+            <td>
+              <p id="title">Your Answer:</p>
+            </td>
+            <td>
+              <input type="text" name="yourguess" id="yourguess">
+            </td>
+          </tr>
+        </table>
+        <br>
+        <button onclick="guess()">Guess</button>
+      </form>
+    </body>
+</html>

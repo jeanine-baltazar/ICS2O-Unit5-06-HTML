@@ -1,0 +1,47 @@
+body {
+  background-image: url("./images/growth.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form {
+  background-color:white;
+  border:1px solid black;
+  width: 600px;
+  height: 700px;
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left:750px;
+  padding:10px;
+}
+h1 {
+  text-align:center;
+  font-size: 250%;
+}
+#information {
+  font-size:130%;
+  margin-left:50px;
+  margin-right:50px;
+}
+#title {
+  font-size: 200%;
+  font-weight: bold;
+}
+#yourguess {
+  height:30px;
+  width:250px;
+  font-size:190%;
+  font-family: serif;
+}
+table {
+  margin-left:50px;
+}
+button {
+  height:40px;
+  width:80px;
+  font-size:120%;
+  font-family: serif;
+  margin-left:50px;
+}
+button:hover {
+  background-color: rgb(204, 204, 204);
+}
